@@ -1,0 +1,59 @@
+.breadcrum-list-wrapper {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: .5rem;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.breadcrum-lift {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 2.0999999046325684px;
+    position: relative;
+    padding-right: 10px;
+
+}
+
+.design-headings-wrapper {
+    padding: 0 1rem;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.headings-text {
+    width: 75%;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 0.5px;
+}
+.text-pagination {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25.2px;
+    color: rgba(129, 133, 136, 1);
+}
+
+.custom-pagination {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    & .icon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        border: 1.5px solid rgba(0, 0, 0, 1);
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
