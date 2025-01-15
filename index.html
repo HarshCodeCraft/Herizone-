@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoriZon Wave</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="top-header">
+                <span class="head-text">EN</span><span class="head-text">AR</span>
+            </div>
+
+            <div class="mobile-header " id="main-mobile-header">
+                <div class="d-flex bg-white py-3 px-3 justify-content-between align-items-center">
+                    <div class="logo-wrapper">
+                        <img src="/assets/images/main-logo.png" alt="">
+                    </div>
+                    <button class="border-0 overfolw-hidden rounded-1 side-bars" onclick="closedHeader()">
+                        <img src="/assets/images/cross.png" class="h-100 w-100" alt="">
+                    </button>
+                </div>
+                <div class="py-3 px-3 bg-white">
+                    <div class="">
+                        <div class="search-wrapper border d-flex align-items-center">
+                            <input type="text" class="search" placeholder="Products Search" onclick="search()">
+                            <img src="/assets/images/search.png" class="search-icon search-icon2" alt="">
+                        </div>
+                    </div>
+                </div>
+                <ul class="mobile-header-list-wrapper">
+                    <li class="mobile-header-list"><a href="/About.html">About Us</a> </li>
+                    <li class="mobile-header-list"><a href="/Services.html">Services</a> </li>
+                    <li class="mobile-header-list"><a href="/Solution.html">Solutions</a> </li>
+                    <li class="mobile-header-list"><a href="/Products.html">Products</a> </li>
+                    <li class="mobile-header-list"><a href="/#">Resource Center</a> </li>
+                    <li class="mobile-header-list"><a href="/#">Experience Center</a></li>
+                    <li class="mobile-header-list"><a href="/#">Get In Touch</a></li>
+                </ul>
+            </div>
+
+
+            <!-- end -->
+            <div class="middle-header">
+                <div class="row align-items-center">
+                    <div class="col-md-4 col-6 col-lg-3 middle-header1 d-flex">
+                        <div class="left-content">
+                            <a href="/index.html" class="">
+                                <img src="/assets/images/main-logo.png" alt="" class="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 d-md-none d-block">
+                        <!-- phone sidebar -->
+                        <div class="">
+                            <div class="d-flex justify-content-end">
+                                <i class="fa-solid fa-bars" onclick="sidebar()"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 d-lg-block d-md-none d-none">
+                        <div class="search-wrapper align-items-center">
+                            <input type="text" placeholder="Search Products..." class="search">
+                            <img src="/assets/images/search.png" alt="" class="search-icon">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-8 col-lg-4 col-12 middle-header2">
+                        <div class="d-flex  gap-3 justify-content-end">
+                            <div class="">
+                                <div class="d-flex ">
+                                    <img src="/assets/images/phone-call.png" alt="" class="header-call-icon">
+                                    <p class="header-call-text mt-1">0115130485</p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="header-icon"><img src="/assets/images/email.png" alt="" class=""></div>
+                                    <div class="header-icon"><img src="/assets/images/whatsapp.png" alt="" class="">
+                                    </div>
+                                    <div class="header-icon"><img src="/assets/images/linkedin.png" alt="" class="">
+                                    </div>
+                                    <div class="header-icon"><img src="/assets/images/youtube.png" alt="" class="">
+                                    </div>
+                                    <div class="header-icon"><img src="/assets/images/tiktok.png" alt="" class=""></div>
+                                    <div class="header-icon"><img src="/assets/images/twitter.png" alt="" class="">
+                                    </div>
+                                    <div class="header-icon"><img src="/assets/images/snapchat.png" alt="" class="">
+                                    </div>
+                                    <div class="header-icon"><img src="/assets/images/location.png" alt="" class="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="">
+                                
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="end-header">
+                <div class="d-flex align-items-center h-100">
+                    <div class="side-bar-wrapper">
+                        <div class="side-bars">
+                            <img src="/assets/images/side-bars.png" alt="" class="">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-around middle-nav">
+                        <div class="open-dropdown"><a href="/About.html" class="nav-link-text">About Us</a>
+                            <div class="header-dropdown-content">
+                                <div class="row m-0 p-0 vh-100">
+                                    <div class="col-3 ps-0">
+                                        <div class="header-content1">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Company Overview</h5>
+                                                </div>
+                                                <hr class="custom-hr">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="header-content2">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Vision and Mission</h5>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Certification and Partners</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="header-content3">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Our Profile</h5>
+                                                </div>
+                                                <hr class="custom-hr">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="header-content4">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Client Testimonials</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-dropdown"><a href="/Services.html" class="nav-link-text">Services</a>
+                            <div class="header-dropdown-content">
+                                <div class="row m-0 p-0 vh-100">
+                                    <div class="col-3 ps-0">
+                                        <div class="header-content1">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Smart Building Solutions</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href="" class="header-link">Control
+                                                                4</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">LIFE
+                                                                SMART</a></li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">AKUBELA</a></li>
+                                                    </ul>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Audio-Visual (AS) Solutions</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href="" class="header-link">digital
+                                                                signage solutions</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">audio
+                                                                solutions</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">sound
+                                                                system PA</a></li>
+                                                    </ul>
+                                                </div>
+                                                <hr class="custom-hr">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="header-content2">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Data Center Solutions</h5>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Internet of Things (IoT) Solutions</h5>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Unified Communications Solutions</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href="" class="header-link">VoIP
+                                                                Solutions</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">video
+                                                                Solutions</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">Call
+                                                                Center Solutions</a></li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">Interactive Screens</a></li>
+                                                    </ul>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Wireless and Mobility Solutions</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href="" class="header-link">PtP
+                                                                Solutions</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">Wireless
+                                                                enterprise Solutions</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">Wireless
+                                                                Home Solutions</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="header-content3">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Infrastructure Solutions</h5>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Security and Surveillance Solutions
+                                                    </h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href="" class="header-link">CCTV
+                                                                Systems</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">Access
+                                                                control system</a></li>
+                                                    </ul>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">CLOCK SYSTEMS</h5>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Smart Intercom Solutions</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">Akuvox</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">2N</a>
+                                                        </li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">commax</a></li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">hikvision</a></li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">Fanvil</a></li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">Doorbrid</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="header-content4">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Elevator emergency Call System</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href="" class="header-link">Network &
+                                                                Cybersecurity Solutions</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">IT
+                                                                Consulting Services</a></li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">Maintenance Contracts</a></li>
+                                                    </ul>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">INTERCOM SYSTEMS</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href="" class="header-link">2N</a>
+                                                        </li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">Akuvox</a></li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">hikvision</a></li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">commax</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-dropdown"><a href="Solution.html" class="nav-link-text">Solution</a>
+                            <div class="header-dropdown-content">
+                                <div class="row m-0 p-0 vh-100">
+                                    <div class="col-3 ps-0">
+                                        <div class="header-content1">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Residential</h5>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Commercial</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="header-content2">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Government</h5>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Healthcare</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="header-content3">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Educations</h5>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Retail</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="header-content4">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Hospitality</h5>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Restaurants</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-dropdown"><a href="Products.html" class="nav-link-text">Products</a>
+                            <div class="header-dropdown-content">
+                                <div class="row m-0 p-0 vh-100">
+                                    <div class="col-3 ps-0">
+                                        <div class="header-content1">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Smart Home Products</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href="" class="header-link">Control
+                                                                4</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">LIFE
+                                                                SMART</a></li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">AKUBELA</a></li>
+                                                    </ul>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">AV Equipment</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href="" class="header-link">SONOS
+                                                                SOUND SYSTEM</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">SIGNAGE
+                                                                SCREEN</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">IPTV</a>
+                                                        </li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">Honeywell</a></li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">YAMAHA</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">BOSE</a>
+                                                        </li>
+                                                        <li class="header-list"><a href="" class="header-link">SHURE</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <hr class="custom-hr">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="header-content2">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Network & Security Products</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href="" class="header-link">CISCO</a>
+                                                        </li>
+                                                        <li class="header-list"><a href="" class="header-link">ARUBA</a>
+                                                        </li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">ENGINUS</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">UNIFI</a>
+                                                        </li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">FORINET</a></li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">SOPHOS</a></li>
+                                                    </ul>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Surveillance Solutions</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">Hikvision</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">DAHWA</a>
+                                                        </li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">HONEYWELL</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">AXIS</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="header-content3">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Network</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href="" class="header-link">ZK</a>
+                                                        </li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">AKUVOX</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">2N</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Unified Communications Products</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href="" class="header-link">VOIP IP
+                                                                PRODUCTS</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">VOIP
+                                                                PHONES</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">VOIP
+                                                                GATEWAY</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">CALL
+                                                                CENTER PRODUCTS</a></li>
+                                                        <li class="header-list"><a href="" class="header-link">VIDEO
+                                                                CONFERENCE PRODUCTS</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="header-content4">
+                                            <div class="">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Emergency Call System</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href="" class="header-link">2N</a>
+                                                        </li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">VALCOM</a></li>
+                                                    </ul>
+                                                </div>
+                                                <hr class="custom-hr">
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">INTERCOM SYSTEMS</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href="" class="header-link">2N</a>
+                                                        </li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">Akuvox</a></li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">hikvision</a></li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">commax</a></li>
+                                                    </ul>
+                                                </div>
+                                                <hr class="custom-hr">
+
+                                                <div class="">
+                                                    <h5 class="dropdown-heading">Clock System</h5>
+                                                    <ul class="header-list-wrapper">
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">VALCOM</a></li>
+                                                        <li class="header-list"><a href=""
+                                                                class="header-link">SAPLING</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-dropdown"><a href="Resource.html" class="nav-link-text">Resource Center</a>
+
+                        </div>
+                        <div class="open-dropdown"><a href="Experience.html" class="nav-link-text">Experience Center</a>
+
+                        </div>
+                        <div class="open-dropdown"><a href="Getintouch.html" class="nav-link-text">Get in Touch</a>
+
+                        </div>
+                        <!-- <div class="header-drowndrop"></div> -->
+                    </div>
+                    <div class="">
+                        <div class="d-flex gap-1 login-btn">
+                            <a href="" class="nav-text">Join Us</a>|
+                            <a href="" class="nav-text">Login</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </header>
+    <!-- Header end -->
+    <section class="main-section">
+        <div class="banner">
+            <div class="banner-img-wrapper">
+                <img src="/assets/images/banner.png" alt="">
+                <div class="banner-text-wrapper">
+                    <h4 class="heading">Book Your Experience Today</h4>
+                    <div class="mt-4">
+                        <button class="common-btn ">Free Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- services -->
+        <div class="container mt-1 py-4 px-4">
+            <div class="common-margin">
+                <div class="main-heading-wrapper">
+                    <h5 class="main-text">OUR SERVICES</h5>
+                    <h1 class="main-heading-text">Get Services With Advanced Technologies</h1>
+                </div>
+
+                <div class="services-card-wrapper mt-4">
+                    <div class="row">
+                        <div class="col-md-4 col-4 px-1">
+                            <div class="common-card">
+                                <img src="/assets/images/services1.png" alt="" class="">
+                                <p class="card-text">Smart Home Installation</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-4 px-1">
+                            <div class="common-card">
+                                <img src="/assets/images/services2.png" alt="" class="">
+                                <p class="card-text">Security Installation</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-4 px-1">
+                            <div class="common-card">
+                                <img src="/assets/images/services3.png" alt="" class="">
+                                <p class="card-text">Technical Consultation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-services">
+                    <button class="view-services-button">View all services <i class="fa fa-arrow-right"></i></button>
+                </div>
+                <!-- products -->
+                <div class="mt-5"></div>
+                <div class="main-heading-wrapper flex-wrap">
+                    <h5 class="main-text">OUR PRODUCTS</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h1 class="main-heading-text">Products Features Cutting-Edge Technology</h1>
+                        <a class="justify-content-end d-flex all-products text-dark">View All</a>
+                    </div>
+
+                </div>
+                <div class="product-card-wrapper mt-4">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3 col-12 ">
+                            <div class="common-product-cards flip-card">
+                                <div class="flip-card-inner px-3">
+
+                                    <div class="flip-card-front">
+                                        <div class="">
+                                            <div class="card-img-area">
+                                                <img src="/assets/images/cctvcamra.png" alt="" class="">
+                                            </div>
+                                            <div class="card-text-area">
+                                                <h3 class="text-area">
+                                                    CP PLUS 2MP Full HD Smart Wi-Fi CCTV Home Security Camera
+                                                </h3>
+                                            </div>
+                                            <div class="card-footer-area">
+                                                <p class="paragraph-area">
+                                                    Autonomous Enterprise for improved resilience,assurance, and
+                                                    superior cx.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flip-card-back">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 col-12 ">
+                            <div class="common-product-cards flip-card">
+                                <div class="flip-card-inner px-3">
+
+                                    <div class="flip-card-front">
+                                        <div class="">
+                                            <div class="card-img-area">
+                                                <img src="/assets/images/fishEyeCamra.png" alt="" class="">
+                                            </div>
+                                            <div class="card-text-area">
+                                                <h3 class="text-area">
+                                                    CP PLUS 2MP Full HD Smart Wi-Fi CCTV Home Security Camera
+                                                </h3>
+                                            </div>
+                                            <div class="card-footer-area">
+                                                <p class="paragraph-area">
+                                                    Autonomous Enterprise for improved resilience,assurance, and
+                                                    superior cx.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flip-card-back">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 col-12 ">
+                            <div class="common-product-cards flip-card">
+                                <div class="flip-card-inner px-3">
+
+                                    <div class="flip-card-front">
+                                        <div class="">
+                                            <div class="card-img-area">
+                                                <img src="/assets/images/ptz_camera.png" alt="" class="">
+                                            </div>
+                                            <div class="card-text-area">
+                                                <h3 class="text-area">
+                                                    CP PLUS 2MP Full HD Smart Wi-Fi CCTV Home Security Camera
+                                                </h3>
+                                            </div>
+                                            <div class="card-footer-area">
+                                                <p class="paragraph-area">
+                                                    Autonomous Enterprise for improved resilience,assurance, and
+                                                    superior cx.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flip-card-back">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 col-12 ">
+                            <div class="common-product-cards flip-card">
+                                <div class="flip-card-inner px-3">
+
+                                    <div class="flip-card-front">
+                                        <div class="">
+                                            <div class="card-img-area">
+                                                <img src="/assets/images/cctvcamra.png" alt="" class="">
+                                            </div>
+                                            <div class="card-text-area">
+                                                <h3 class="text-area">
+                                                    CP PLUS 2MP Full HD Smart Wi-Fi CCTV Home Security Camera
+                                                </h3>
+                                            </div>
+                                            <div class="card-footer-area">
+                                                <p class="paragraph-area">
+                                                    Autonomous Enterprise for improved resilience,assurance, and
+                                                    superior cx.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flip-card-back">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- solutions -->
+                <div class="mt-5"></div>
+                <div class="main-heading-wrapper flex-wrap">
+                    <h5 class="main-text">SOLUTIONS</h5>
+                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <h1 class="main-heading-text">Get Services With Advanced Technologies</h1>
+                        <a class="justify-content-end all-products text-dark">View All</a>
+                    </div>
+                </div>
+
+                <div class="solutions-card-wrapper mt-4">
+                    <div class="row">
+                        <div class="col-md-4 col-4 px-1">
+                            <div class="common-card">
+                                <img src="/assets/images/solution1.png" alt="" class="">
+                                <div class="solution-text-wrapper">
+                                    <h3 class="solution-card-text">IoT & Digital Engineering</h3>
+                                    <p class="solution-card-text1 mt-2">IoT-based systems can create exponential
+                                        value by adding digital intelligence.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-4 px-1">
+                            <div class="common-card">
+                                <img src="/assets/images/solution2.png" alt="" class="">
+                                <div class="solution-text-wrapper">
+                                    <h3 class="solution-card-text">Data & Analytics</h3>
+                                    <p class="solution-card-text1 mt-2">Data is at the heart of business
+                                        transformation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-4 px-1">
+                            <div class="common-card">
+                                <img src="/assets/images/solution3.png" alt="" class="">
+                                <div class="solution-text-wrapper">
+                                    <h3 class="solution-card-text">Cybersecurity</h3>
+                                    <p class="solution-card-text1 mt-2">With expanding threat perimeters in the
+                                        digital world, cybersecurity is no longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- case studies -->
+                <div class="mt-5"></div>
+                <div class="main-heading-wrapper flex-wrap">
+                    <h5 class="main-text">OUR CASE STUDIES</h5>
+                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <h1 class="main-heading-text">Our Project Case Studies Here</h1>
+                        <a class="justify-content-end all-products text-dark">View All</a>
+                    </div>
+                </div>
+
+                <div class="case-card-wrapper mt-4">
+                    <div class="row">
+                        <div class="col-md-4 col-4 px-1">
+                            <div class="common-card">
+                                <img src="/assets/images/case-stud1.png" alt="" class="">
+                                <div class="case-text-wrapper">
+                                    <h3 class="case-card-text">Industrial CCTV case Study : Project outcome</h3>
+                                    <!-- <h3 class="case-card-text"></h3> -->
+                                    <a href="" class="text-white text-decoration-none">
+                                        <i class="fa fa-arrow-right"></i>
+                                        Reed more</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-4 px-1">
+                            <div class="common-card">
+                                <img src="/assets/images/case-stud2.png" alt="" class="">
+                                <div class="case-text-wrapper">
+                                    <h3 class="case-card-text">Industrial CCTV case Study : Project outcome</h3>
+                                    <!-- <h3 class="case-card-text"></h3> -->
+                                    <a href="" class="text-white text-decoration-none"><i class="fa fa-arrow-right">
+                                        </i> Reed more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-4 px-1">
+                            <div class="common-card">
+                                <img src="/assets/images/case-stud3.png" alt="" class="">
+                                <div class="case-text-wrapper">
+                                    <h3 class="case-card-text">Industrial CCTV case Study : Project outcome</h3>
+                                    <!-- <h3 class="case-card-text">Project outcome</h3> -->
+                                    <a href="" class="text-white text-decoration-none"><i class="fa fa-arrow-right"></i>
+                                        Reed more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- testimonial -->
+                <div class="main-testimonial mt-5 mb-5">
+                    <div class="main-heading-wrapper ">
+                        <h5 class="main-texts d-flex justify-content-center">Testimonial</h5>
+                        <div class="d-flex d-flex justify-content-center">
+                            <h1 class="testimonial-main-heading d-flex text-center">What are customer Say
+                                about us</h1>
+                        </div>
+                        <div class="d-flex justify-content-center w-100">
+                        <div class="testimonial-beneficial">
+                            <h3 class="beneficial-heading  text-center">
+                                Beneficial Experience</h3>
+                            <p class="beneficial-paragraph text-center mt-4">"We recently
+                                installed the XYZ CCTV system at
+                                our business,
+                                and it has been a game changer. The installation was smooth, and the setup
+                                was user-friendly,
+                                even for someone like me who isn’t very tech-savvy.
+                                The high-definition video quality, gives us a clear view of every corner of
+                                the property.
+                                we feel safer knowing it’s in place. I would highly recommend the XYZ CCTV
+                                system to anyone looking for reliable,
+                                high-quality security cameras."</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- testimonial user images -->
+                <div class="mt-5"></div>
+                <div class="d-flex justify-content-center gap-4 align-items-center mt-5">
+                    <div class="testimonial-user-img">
+                        <img src="/assets/images/user1.jpg" alt="" class="">
+                    </div>
+                    <div class="testimonial-user-img">
+                        <img src="/assets/images/user2.jpg" alt="" class="">
+                    </div>
+                    <div class="testimonial-user-img big-size">
+                        <img src="/assets/images/user3.jpg" alt="" class="">
+                    </div>
+                    <div class="testimonial-user-img">
+                        <img src="/assets/images/user4.jpg" alt="" class="">
+                    </div>
+                    <div class="testimonial-user-img">
+                        <img src="/assets/images/user5.jpg" alt="" class="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="">
+            <div class="mb-5">
+                <div class="footer-wrapper">
+                    <div class="container">
+                        <div class="main-footer">
+                            <div class="row">
+                                <div class="col-md-4 col-12 mt-md-0 mt-4">
+                                    <div class="img-wrapper">
+                                        <img src="/assets/images/main-logo.png" alt="" class="w-100 h-100">
+                                    </div>
+                                    <div class="footer-text-wrapper mt-4">
+                                        <p class="footer-text">Let's go to view out latest Security Camera Products.</p>
+                                    </div>
+                                    <div class="footer-social-links">
+                                        <div class="d-flex footer-social-img">
+                                            <div class="social-link">
+                                                <img src="/assets/images/" alt="" class="">
+                                            </div>
+                                            <div class="social-link">
+                                                <img src="/assets/images/youtube-circle.png" alt="" class="">
+                                            </div>
+                                            <div class="social-link">
+                                                <img src="/assets/images/linkedin-circle.png" alt="" class="">
+                                            </div>
+                                            <div class="social-link">
+                                                <img src="/assets/images/tiktok-circle.png" alt="" class="">
+                                            </div>
+                                            <div class="social-link">
+                                                <img src="/assets/images/facebook-circle.png" alt="" class="">
+                                            </div>
+                                            <div class="social-link">
+                                                <img src="/assets/images/tiktok-circle.png" alt="" class="">
+                                            </div>
+                                            <div class="social-link">
+                                                <img src="/assets/images/snapchat-circle.png" alt="" class="">
+                                            </div>
+                                            <div class="social-link">
+                                                <img src="/assets/images/instagram-circle.png" alt="" class="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-12 mt-md-0 mt-4">
+                                    <p class="footer-middle-text">123 Al wasl Road, Jumeriah 1, Dubai</p>
+                                    <p class="footer-middle-text">United Arab Emirates</p>
+                                    <p class="footer-middle-text">PO Box 456789</p>
+                                    <div class="mt-5">
+                                        <div class="">
+                                            <p class="footer-middle-text">
+                                                <span class="fw-semibold mb-0">Phone:</span>
+                                                <span class="">+97 123456798</span>
+                                            </p>
+                                            <p class="footer-middle-text">
+                                                <span class="fw-semibold mb-0">Email:</span>
+                                                <span class="">info@gmail.com</span>
+                                            </p>
+                                            <p class="footer-middle-text">
+                                                <span class="fw-semibold mb-0">Sales Hours:</span>
+                                                <span class="">9 AM to 5 PM, Saturday to Thursday</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-12 mt-md-0 mt-4">
+                                    <div class="search-wrapper">
+                                        <input type="text" class="search" placeholder="Products Search...">
+                                        <img src="/assets/images/search.png" alt="" class="search-icon">
+                                    </div>
+                                    <div class="mt-3 ps-2">
+                                        <h3 class="footer-middle-heading">Quicks Links</h3>
+                                    </div>
+                                    <div class="">
+                                        <ul class="footer-links">
+                                            <li>Request Support</li>
+                                            <li>Services</li>
+                                            <li>Contact Us</li>
+                                            <li>Privacy Policy</li>
+                                            <li>Join Our Team</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                </div>
+                <div class="end-footer">
+                    <p class="text">@ Copyright 2024<b> horizonwave.</b>
+                        All Rights Reversed
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    </div>
+
+    <script>
+
+        function sidebar() {
+            var x = document.getElementById("main-mobile-header")
+            x.classList.add("w-100")
+        }
+
+        function closedHeader() {
+            var x = document.getElementById("main-mobile-header")
+            x.classList.remove("w-100")
+         } 
+    </script>
+
+</body>
+
+</html>
